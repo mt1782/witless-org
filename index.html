@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>witless.org SMS Notifications</title>
+  <meta name="description" content="Administrative SMS notification information for witless.org.">
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #121a2b;
+      --text: #e8eefc;
+      --muted: #b7c2dd;
+      --line: #2a3550;
+      --accent: #8fb3ff;
+      --accent-2: #d8e4ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0a1020 0%, #0f1628 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+    .card {
+      background: rgba(18, 26, 43, 0.95);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
+    }
+    h1, h2, h3 { line-height: 1.25; margin-top: 0; }
+    h1 { font-size: 2rem; margin-bottom: 10px; }
+    h2 { font-size: 1.2rem; margin-top: 26px; }
+    p, li { color: var(--muted); }
+    .lead { font-size: 1.03rem; color: var(--accent-2); }
+    .pill {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--accent-2);
+      background: rgba(143, 179, 255, 0.08);
+      font-size: 0.9rem;
+    }
+    .grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 20px;
+    }
+    .mini {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px;
+      background: rgba(255,255,255,0.02);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .footer {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      font-size: 0.96rem;
+    }
+    ul { padding-left: 20px; }
+    code {
+      background: rgba(255,255,255,0.08);
+      padding: 2px 6px;
+      border-radius: 6px;
+      color: var(--accent-2);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="pill">Administrative SMS Notifications</div>
+      <h1>witless.org</h1>
+      <p class="lead">
+        witless.org uses SMS only for administrative, operational, and account-related alerts.
+        These messages are not marketing or promotional messages.
+      </p>
+
+      <h2>What these messages are for</h2>
+      <p>
+        Messages may be used for tool automation alerts, service health warnings, credential or login failure notices,
+        infrastructure notifications, remote access or connectivity issues, and similar system events.
+      </p>
+
+      <div class="grid">
+        <div class="mini">
+          <h3>Current use</h3>
+          <p>At present, these SMS alerts are intended for the site owner’s own number only.</p>
+        </div>
+        <div class="mini">
+          <h3>How opt-in works</h3>
+          <p>Numbers are manually configured by the administrator inside the relevant tool or workflow. There is no public auto-enrollment form on this site.</p>
+        </div>
+        <div class="mini">
+          <h3>Message type</h3>
+          <p>Transactional and administrative alerts only. No advertising, telemarketing, or list sales.</p>
+        </div>
+      </div>
+
+      <h2>Consent and message disclosures</h2>
+      <ul>
+        <li>Message frequency varies based on account activity, system conditions, alerts, and automation events.</li>
+        <li>Message and data rates may apply, depending on the recipient’s mobile carrier plan.</li>
+        <li>Reply <strong>STOP</strong> to opt out.</li>
+        <li>Reply <strong>HELP</strong> for help.</li>
+      </ul>
+
+      <h2>Important note about enrollment</h2>
+      <p>
+        This website is provided to document the messaging program and related policies. SMS recipients are not added through a public signup form here.
+        Instead, the administrator manually enters an authorized number into a tool configuration after obtaining consent. Numbers are not purchased,
+        scraped, or imported from third-party lists.
+      </p>
+
+      <div class="footer">
+        <p>
+          Questions about messaging, compliance, or support: <a href="mailto:compliance@witless.org">compliance@witless.org</a><br>
+          Privacy questions: <a href="mailto:privacy@witless.org">privacy@witless.org</a>
+        </p>
+        <p>
+          <a href="/privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
+          <a href="/terms.html">Terms of Service</a>
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
