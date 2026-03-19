@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>witless.org SMS Notifications</title>
-  <meta name="description" content="Administrative SMS notification information for witless.org.">
+  <meta name="description" content="Administrative SMS notification information and opt-in instructions for witless.org.">
   <style>
     :root {
       --bg: #0b1220;
@@ -80,6 +80,43 @@
       border-radius: 6px;
       color: var(--accent-2);
     }
+    .optin-box {
+      margin-top: 28px;
+      padding: 24px;
+      border: 1px solid var(--accent);
+      border-radius: 12px;
+      background: rgba(143, 179, 255, 0.06);
+    }
+    .optin-box h2 {
+      margin-top: 0;
+      color: var(--accent-2);
+    }
+    .keyword-highlight {
+      display: inline-block;
+      margin: 12px 0;
+      padding: 14px 22px;
+      background: rgba(143, 179, 255, 0.12);
+      border: 1px solid var(--accent);
+      border-radius: 10px;
+      font-size: 1.15rem;
+      color: var(--text);
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+    .disclosure-list {
+      margin-top: 16px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: rgba(255,255,255,0.02);
+    }
+    .disclosure-list p {
+      margin: 0 0 6px;
+      font-size: 0.93rem;
+    }
+    .disclosure-list p:last-child {
+      margin-bottom: 0;
+    }
   </style>
 </head>
 <body>
@@ -88,44 +125,66 @@
       <div class="pill">Administrative SMS Notifications</div>
       <h1>witless.org</h1>
       <p class="lead">
-        witless.org uses SMS only for administrative, operational, and account-related alerts.
+        Witless.org uses SMS only for administrative, operational, and account-related alerts.
         These messages are not marketing or promotional messages.
       </p>
 
       <h2>What these messages are for</h2>
       <p>
-        Messages may be used for tool automation alerts, service health warnings, credential or login failure notices,
-        infrastructure notifications, remote access or connectivity issues, and similar system events.
+        Messages may include tool automation alerts, service health warnings, credential or login failure notices,
+        infrastructure notifications, remote access or connectivity issues, email triage summaries, and similar system events.
       </p>
 
       <div class="grid">
         <div class="mini">
-          <h3>Current use</h3>
-          <p>At present, these SMS alerts are intended for the site owner’s own number only.</p>
-        </div>
-        <div class="mini">
-          <h3>How opt-in works</h3>
-          <p>Numbers are manually configured by the administrator inside the relevant tool or workflow. There is no public auto-enrollment form on this site.</p>
-        </div>
-        <div class="mini">
-          <h3>Message type</h3>
+          <h3>Message types</h3>
           <p>Transactional and administrative alerts only. No advertising, telemarketing, or list sales.</p>
+        </div>
+        <div class="mini">
+          <h3>Frequency</h3>
+          <p>Message frequency varies based on system conditions, alerts, and automation events.</p>
+        </div>
+        <div class="mini">
+          <h3>Cost</h3>
+          <p>Message and data rates may apply depending on your mobile carrier plan.</p>
         </div>
       </div>
 
-      <h2>Consent and message disclosures</h2>
-      <ul>
-        <li>Message frequency varies based on account activity, system conditions, alerts, and automation events.</li>
-        <li>Message and data rates may apply, depending on the recipient’s mobile carrier plan.</li>
-        <li>Reply <strong>STOP</strong> to opt out.</li>
-        <li>Reply <strong>HELP</strong> for help.</li>
-      </ul>
+      <!-- Opt-In Instructions -->
+      <div class="optin-box" id="opt-in">
+        <h2>How to Subscribe to SMS Alerts</h2>
+        <p>
+          To opt in and receive administrative SMS alerts from Witless.org, send the following keyword
+          via text message to our notification number:
+        </p>
+        <div class="keyword-highlight">
+          Text <code>START</code> to <code>+1 (512) 877-6613</code>
+        </div>
+        <p>
+          After sending START, you will receive a confirmation message verifying your enrollment.
+          Only users who text START to this number will be subscribed to alerts.
+        </p>
 
-      <h2>Important note about enrollment</h2>
+        <div class="disclosure-list">
+          <p><strong>Witless.org</strong> &mdash; Administrative SMS Alert Program</p>
+          <p>Message frequency varies based on system conditions, alerts, and automation events.</p>
+          <p>Msg &amp; Data rates may apply.</p>
+          <p>Reply <strong>STOP</strong> to opt out at any time. Reply <strong>HELP</strong> for help.</p>
+          <p>
+            <a href="/privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
+            <a href="/terms.html">Terms of Service</a>
+          </p>
+          <p style="margin-top: 10px;">
+            Your phone number will not be shared with third parties for marketing or promotional purposes.
+          </p>
+        </div>
+      </div>
+
+      <h2>Opt-out</h2>
       <p>
-        This website is provided to document the messaging program and related policies. SMS recipients are not added through a public signup form here.
-        Instead, the administrator manually enters an authorized number into a tool configuration after obtaining consent. Numbers are not purchased,
-        scraped, or imported from third-party lists.
+        You may opt out of SMS notifications at any time by replying <strong>STOP</strong> to any message.
+        You may also contact <a href="mailto:compliance@witless.org">compliance@witless.org</a> for assistance.
+        Reply <strong>HELP</strong> to any message for support information.
       </p>
 
       <div class="footer">
